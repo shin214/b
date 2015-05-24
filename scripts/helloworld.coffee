@@ -12,3 +12,10 @@ module.exports = (robot) ->
         "やんやんっ♡♡",
         "ないやん"        
     ]
+
+robot.hear /疲れ/i, (msg) ->
+    msg.send msg.random [
+      "お疲れさま",
+      "良いんじゃないかしら",
+      "ファイトだよっ"
+    ]
